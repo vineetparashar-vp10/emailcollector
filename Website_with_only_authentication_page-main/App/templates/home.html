@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block head %}
+	<title>Home Page</title>
+{% endblock %}
+
+{% block body %}
+	{% for datas in infor %}
+		<h1>{{ datas.e_mail }}</h1>
+	{% endfor %}
+	<style>
+		body{
+			background-color: #ebebeb
+		}
+		.navbar .mainbtns .home{
+			color: #bdbdbd;
+		}
+		.input-group{
+			width: 600px;
+			margin-top: 40px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.input-group input{
+			border-radius: 5px;
+		}
+	</style>
+
+{% endblock %}
